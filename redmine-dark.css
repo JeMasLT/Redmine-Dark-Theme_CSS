@@ -107,7 +107,7 @@ body.dark a:hover,
 body.dark a:focus,
 body.dark div.flash.notice,
 body.dark #main-menu .menu-children li a:hover {
-    color: rgb(17, 17, 17);
+    color: rgb(0, 0, 0);
 }
 
 body.dark #main-menu,
@@ -222,7 +222,7 @@ body.dark.theme-Rtmaterial #my-page tr.overdue td.id {
     body h4,
     body h5,
     body h6 {
-        color: #555 !important;
+        color: #000000 !important;
     }
 
     body #main a.user {
@@ -234,12 +234,28 @@ body.dark.theme-Rtmaterial #my-page tr.overdue td.id {
     body a.issue:visited,
     body div.wiki .wiki-page,
     body div.wiki .external {
-        color: #060606;
+        color: #000000;
         background-color: #cf009f4a;
     }
 
+    div.wiki {
+        color: #000000;
+        line-height: 1.6;
+        font-size: large;
+}
+
     body .highlight {
         color: #000;
+    }
+
+    .issue .attribute .label {
+        box-sizing: border-box;
+        float: left;
+        color: #001f87
+    }
+
+    .issue .attribute .value {
+        color: #000000
     }
 
     body input[type="submit"],
@@ -271,7 +287,7 @@ body.dark.theme-Rtmaterial #my-page tr.overdue td.id {
     body a:focus,
     body div.flash.notice,
     body #main-menu .menu-children li a:hover {
-        color: rgb(17, 17, 17);
+        color: rgb(0, 0, 0);
     }
 
     body #main-menu,
@@ -418,5 +434,13 @@ body.dark.theme-Rtmaterial #my-page tr.overdue td.id {
 
     table.progress td.closed {
         background-color: #fb66ff !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .dark\:border-gray-700 {
+            --tw-border-opacity: 1;
+            border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+            background-color: #ffffff;
+        }
     }
 }
